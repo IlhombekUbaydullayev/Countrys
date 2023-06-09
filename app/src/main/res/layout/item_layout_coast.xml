@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="5dp"
+    android:layout_marginVertical="7dp"
+    android:gravity="center_horizontal"
+    android:id="@+id/ll_posts"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_layout"
+        android:gravity="center_horizontal|center_vertical">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_coast"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/circle"
+            android:padding="10dp"
+            android:src="@drawable/coat" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_coast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ECD"
+        android:layout_marginTop="3dp"
+        android:textColor="#656262"
+        android:textSize="14sp"/>
+</LinearLayout>
